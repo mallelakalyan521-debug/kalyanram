@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air Dosa - Drone Delivery Dosas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>✈️ Air Dosa</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#order" class="btn-order">Order Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Dosas Delivered by Drone</h2>
+                <p>Fresh, hot dosas delivered right to your doorstep in minutes!</p>
+                <button class="btn btn-primary" onclick="scrollToOrder()">Order Your Dosa Now</button>
+            </div>
+            <div class="hero-image">
+                <img src="https://via.placeholder.com/400x300?text=Drone+Delivery" alt="Drone delivering dosa">
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-us">
+        <div class="container">
+            <h2>Why Choose Air Dosa?</h2>
+            <div class="features">
+                <div class="feature">
+                    <div class="feature-icon">🚁</div>
+                    <h3>Lightning Fast Delivery</h3>
+                    <p>Get your dosas in 10-15 minutes with drone delivery</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🔥</div>
+                    <h3>Always Hot & Fresh</h3>
+                    <p>Thermally insulated delivery containers keep dosas piping hot</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🌍</div>
+                    <h3>Eco-Friendly</h3>
+                    <p>Zero-emission drone delivery reduces carbon footprint</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">💰</div>
+                    <h3>Affordable Prices</h3>
+                    <p>No delivery charges! Our drones make delivery cost-effective</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <h2>Our Menu</h2>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <img src="https://via.placeholder.com/250x200?text=Plain+Dosa" alt="Plain Dosa">
+                    <h3>Plain Dosa</h3>
+                    <p>Classic crispy dosa with chutney and sambar</p>
+                    <span class="price">₹120</span>
+                    <button class="btn btn-small" onclick="addToCart('Plain Dosa', 120)">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img src="https://via.placeholder.com/250x200?text=Masala+Dosa" alt="Masala Dosa">
+                    <h3>Masala Dosa</h3>
+                    <p>Spiced potato filling with a crispy exterior</p>
+                    <span class="price">₹150</span>
+                    <button class="btn btn-small" onclick="addToCart('Masala Dosa', 150)">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img src="https://via.placeholder.com/250x200?text=Paneer+Dosa" alt="Paneer Dosa">
+                    <h3>Paneer Dosa</h3>
+                    <p>Crispy dosa with paneer and vegetables</p>
+                    <span class="price">₹180</span>
+                    <button class="btn btn-small" onclick="addToCart('Paneer Dosa', 180)">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img src="https://via.placeholder.com/250x200?text=Cheese+Dosa" alt="Cheese Dosa">
+                    <h3>Cheese Dosa</h3>
+                    <p>Melted cheese with crispy dosa perfection</p>
+                    <span class="price">₹170</span>
+                    <button class="btn btn-small" onclick="addToCart('Cheese Dosa', 170)">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img src="https://via.placeholder.com/250x200?text=Onion+Dosa" alt="Onion Dosa">
+                    <h3>Onion Dosa</h3>
+                    <p>Topped with caramelized onions and special spices</p>
+                    <span class="price">₹140</span>
+                    <button class="btn btn-small" onclick="addToCart('Onion Dosa', 140)">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img src="https://via.placeholder.com/250x200?text=Egg+Dosa" alt="Egg Dosa">
+                    <h3>Egg Dosa</h3>
+                    <p>Crispy dosa with scrambled egg filling</p>
+                    <span class="price">₹160</span>
+                    <button class="btn btn-small" onclick="addToCart('Egg Dosa', 160)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <h2>How Air Dosa Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Order Online</h3>
+                    <p>Browse our menu and place your order through our app or website</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>We Prepare</h3>
+                    <p>Our chefs prepare your fresh dosas with premium ingredients</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Drone Launch</h3>
+                    <p>Our autonomous drone takes off with your hot dosas</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Safe Delivery</h3>
+                    <p>Receive your order at your doorstep in 10-15 minutes</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Section -->
+    <section id="order" class="order">
+        <div class="container">
+            <h2>Ready to Order?</h2>
+            <div class="order-box">
+                <div class="cart-summary">
+                    <h3>Order Summary</h3>
+                    <div id="cart-items">
+                        <p>No items added yet</p>
+                    </div>
+                    <div class="total">
+                        <strong>Total: ₹<span id="total">0</span></strong>
+                    </div>
+                </div>
+                <form class="order-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Email Address" required>
+                    <input type="tel" placeholder="Phone Number" required>
+                    <textarea placeholder="Delivery Address" required></textarea>
+                    <button type="submit" class="btn btn-primary">Confirm Order</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h3>📍 Location</h3>
+                    <p>123 Dosa Street, Food City<br>India</p>
+                </div>
+                <div class="contact-item">
+                    <h3>📞 Phone</h3>
+                    <p>+91 9876 543 210</p>
+                </div>
+                <div class="contact-item">
+                    <h3>📧 Email</h3>
+                    <p>hello@airdosa.com</p>
+                </div>
+                <div class="contact-item">
+                    <h3>🕐 Hours</h3>
+                    <p>Mon-Sun: 11AM - 11PM</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Air Dosa. All rights reserved. | Delivering dreams, one dosa at a time! ✈️🍲</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
